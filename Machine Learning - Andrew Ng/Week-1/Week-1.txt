@@ -1,0 +1,32 @@
+- h(x): hypothesis function
+
+- Linear regression with one variable: univariate linear regression
+- Cost function: usually represented by J
+- minimize Theta0, Theta1 such that sum(hi(x) - yi)**2
+
+- Squared loss error function is the most commonly used cost function in regression problem
+- Cost function is represented by J
+
+- Gradient descent for minimizing the cost function J
+  Gradient descent is used all over the place in Machine Learning
+
+- Gradient descent can be used to generalize more general problems also with Theta0, Theta1 ........ Thetan
+
+- ":=" means assignment
+  "="  truth assertion
+
+- alpha in the gradient-descent is called the learning rate and it determines the length of your step
+
+- derivative gives us the slope of the tangent to a curve at a point
+
+- when alpha is constant with decrease in the value of gradient the steps taken decrease in size, so naturally by taking
+  smaller steps you should arrive at the local minima
+
+
+- Gradient descent scales better than Normal-equations method
+
+- R 4X3 superscript is a symbol for matrix
+
+- Matrix multiplication is not commutative but it is associative
+
+- Only square matrices have inverses

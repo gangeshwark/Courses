@@ -30,3 +30,5 @@
 - Matrix multiplication is not commutative but it is associative
 
 - Only square matrices have inverses
+
+- Matrices that don't have an inverse are called singular or degenerate matrices

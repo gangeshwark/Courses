@@ -6,7 +6,29 @@
 
 - If gradient descent results in cost function increasing then lower the value of learning rate.
 
-- For suffeciently small alpha it can be show that the cost function should decrease on every iteration.
+- For sufficiently small alpha it can be show that the cost function should decrease on every iteration.
 
 - But if the learning rate is too small gradient descent can be slow to converge.
-- Plot J(theta) as a function of number of iterations.
+
+- In mathematics a function is called a convex function if if a line segment between any two points on the graph of function lies above or on the graph.
+
+- Construct matrix X which has all the training features and an extra column added with all 1's. So X is (m X n+1) training matrix where m is the number of training instances and
+  n+1 is the number of features. X is also called the design matrix.
+
+- Theta = ((XT * X)-1) * XT * y
+    where XT is X transpose.
+
+- For Normal-equation method its not important to use feature-scaling.
+
+- For gradient-descent you need to chose learning rate whereas you don't need to do this for normal-equation. Gradient-descent also requires iteration.
+
+- Gradient descent works well for large number of features. Whereas finding the inverse of a matrix is directly proportional to O(n**3).
+
+- A matrix is said to be singular matrix if it is non-invertible.
+
+- Two matrices are said to be row-equivalent if one can be transformed to other using row-operations. Alternatively two matrices are said to be
+  row equivalent if they have the same row space.
+
+- The column space/ row space of a matrix is the set of all possible linear combinations of its column/row vectors.
+
+- The cut-off for the switch between normal-equation to gradient descent is roughly around 10,000.

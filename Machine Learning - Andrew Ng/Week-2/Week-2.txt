@@ -1,0 +1,12 @@
+- Multi-variate regression: h(theta) = [theta]^T [X]
+
+- Feature scaling: get every feature into approximately a -1 to 1 range
+
+- Mean normalization: (x-mean of training set)/(total range) using standard deviation in denominator will also be fine
+
+- If gradient descent results in cost function increasing then lower the value of learning rate.
+
+- For suffeciently small alpha it can be show that the cost function should decrease on every iteration.
+
+- But if the learning rate is too small gradient descent can be slow to converge.
+- Plot J(theta) as a function of number of iterations.

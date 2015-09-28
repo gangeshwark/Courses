@@ -22,7 +22,6 @@
 - when alpha is constant with decrease in the value of gradient the steps taken decrease in size, so naturally by taking
   smaller steps you should arrive at the local minima
 
-
 - Gradient descent scales better than Normal-equations method
 
 - R 4X3 superscript is a symbol for matrix

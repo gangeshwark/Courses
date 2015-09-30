@@ -1,0 +1,77 @@
+#OCTAVE
+- In '.m' files comments are made using '%' sign.
+
+- disp(sprintf("value: %0.6f", a))
+
+- Matrices -> A = [1 2; 3 4; 5 6]
+    A = [1 2;
+    3 4;
+    5 6]
+
+- v = 1:0.1:2 % this lines creates a vector for v with following values: [1; 1.1; 1.2; .............. ;2.0]
+
+- For matrix containing only 1s: ones(2, 3)
+
+- C = 2 * ones(2, 3);
+
+- w = rand(2, 3); % matrix of all random numbers
+
+- gaussian/normal distribution: randn(2, 3) % mean 0, variance 1.
+
+- eye(3) % generates an identity matrix
+
+- w = -6 + sqrt(10) * randn(1, 10000);
+  hist(w)   % create a histogram
+  hist(w, 50)   % create a histogram with 50 buckets
+
+- help eye
+  help rand
+  help help
+
+- size(A) returns [number_of_rows number_of_columns]
+  size(A, 1) returns number of rows
+  size(A, 2) returns number of columns
+
+- load('featuresX.dat')
+
+- 'who' command shows what variables are active in octave.
+  'whos' command also shows the memory consumption by variables and type of data.
+
+- clear variable_name % used for deleting variables
+
+- save hello.mat v % this command will save vector v in hello.mat
+
+- clear deletes all variables in workspace.
+
+- "save hello.mat v" will save in binary format and "save hello.txt v -ascii" will save in human-readable format.
+
+- A(3, 2) % element in 3rd row and 2nd column
+  A(3, :) % fetches the whole row
+  A(:, 2) % fetches the whole column
+  A([1 3], :) % get everything from the first and third rows of A and all the columns of A
+  A(:, 2) = [10; 11; 21];
+  A = [A, [13; 14; 15]];    % adds a column to A
+  B = A(:)  % put all elements of A in a single column vector
+  C = [A B] % concatenating two matrices
+  C = [A; B]    % puts matrix B at bottom
+
+ - A .* B multiplies two matrices element by element
+ - A .^ 2 element wise squaring of A
+ - 1 ./ A element wise inverse of A
+ - log(v) element-wise logarithm
+ - e(v) element-wise exponentiation
+ - abs(v) element-wise absolute value
+ - -v minus of vector v
+ - A' gives the A transpose
+ - val = max(A)
+ - [val, ind] = max(A) % for a matrix max does a column-wise maximum
+ - A < 3 does an element wise comparison
+ - find(A < 3) gives the element of A which are < 3
+ - A magic square is an arrangement of integers '1:n^2' such that all the row sums, column sums and diagonal sums are equal to the same value.
+ - [r, c] = find(A > 7) finds row and column indices of values > 7
+ - sum(A), prod(A), floor(A), ceil(A)
+ - max(rand(3), rand(3)) takes the element-wise maximum of the two matrices
+ - max(A, [], 2) takes max along the second dimension of A
+ - sum(A, 1) sums up the columns
+ - flipud(A) flips the matrix A
+ - pinv(A) finds the pseudo-inverse of A

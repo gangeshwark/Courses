@@ -32,3 +32,5 @@
 - The column space/ row space of a matrix is the set of all possible linear combinations of its column/row vectors.
 
 - The cut-off for the switch between normal-equation to gradient descent is roughly around 10,000.
+
+- X'X can be non invertible if there are redundant features or there are too many features (m <= n). When there are too many features you can perform regularization.

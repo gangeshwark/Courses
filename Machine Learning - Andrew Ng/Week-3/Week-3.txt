@@ -1,0 +1,11 @@
+- Applying linear-regression to classification problems is not a great idea.
+
+- Linear-regression doesn't deal well with outliers.
+
+- Logistic regression is a classification algorithm.
+
+- Logistic function/Sigmoid function is used in Logistic regression
+
+- h(x) = 1/(1+e^(-Theta'*X))
+
+- Interpreting h(x) as estimated probability that y=1 on input x.

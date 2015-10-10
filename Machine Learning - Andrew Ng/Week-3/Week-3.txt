@@ -11,3 +11,19 @@
 - Interpreting h(x) as estimated probability that y=1 on input x.
 
 - Non linear decision boundaries, you need add higher order polynomials
+
+- In statistics the process of maximum-likelihood estimation is the process of estimating the parameters of statistical model given data.
+
+- Applying feature scaling can help for Logistic Regression also.
+
+- Gradient Descent, BFGS, L-BFGS are optimization algorithms which need methods to calculate cost of function and partial derivative of cost and then
+  can achieve the same objective as Gradient descent.
+- For the optimization techniques there is no need to find learning rate. Use line-search to find out learning rate.
+- Often converge faster than gradient descent, they do more sophisticated techniques.
+
+- Using advanced optimization techniques in Octave:
+    function [jval, gradient] = costFunction(theta);
+    options = optimset('GradObj', 'on', 'MaxIter', 100);
+    initialTheta = zeros(2,1);
+    [optTheta, funcVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+    % @ represent a pointer to the function

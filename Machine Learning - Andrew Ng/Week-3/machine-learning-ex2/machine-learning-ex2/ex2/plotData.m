@@ -14,8 +14,8 @@ figure; hold on;
 
 positive = find(y==1);
 negative = find(y==0);
-plot(X(positive,:), "k+");
-plot(X(negative,:), "ko");
+plot(X(positive,:), 'k+');
+plot(X(negative,:), 'ko');
 
 % =========================================================================
 

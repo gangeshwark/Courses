@@ -69,7 +69,6 @@ initial_theta = zeros(n + 1, 1);
 fprintf('Cost at initial theta (zeros): %f\n', cost);
 fprintf('Gradient at initial theta (zeros): \n');
 fprintf(' %f \n', grad);
-return;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;

@@ -1,0 +1,5 @@
+- When there are few features and the classification problem is non-linear then you can include many polynomial terms
+  and deal with the non-linearity. This method doesn't work well when there are large number of features because you might
+  end up overfitting and there is a good chance that the model will be computationally expensive.
+
+- Neural networks help out with non-linear hypotheses.
